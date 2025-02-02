@@ -1,6 +1,6 @@
 ---
 layout: image-right
-image: ../imgs/people_talking.webp
+image: /people_talking.webp
 ---
 
 # Coupling

@@ -1,6 +1,6 @@
 ---
 layout: image-right
-image: ../imgs/360_F_765228327_gnesl1GRoRViQqE95FQhAG8NIEzFxY9U.jpg
+image: /connascence.jpg
 ---
 
 # Connascence

@@ -1,6 +1,6 @@
 ---
 layout: image-right
-image: ../imgs/star-wars-troopers-i7246.jpg
+image: /troopers.jpg
 ---
 
 # Cohesion

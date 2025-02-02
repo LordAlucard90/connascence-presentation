@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: ./imgs/cover.webp
+background: /cover.webp
 title: Connascence
 titleTemplate: '%s'
 info: false
@@ -118,7 +118,7 @@ layout: two-cols-header
 
 ::right::
 
-<img src="./imgs/book.jpg" />
+<img src="/book.jpg" />
 
 <style>
   img {
@@ -128,7 +128,7 @@ layout: two-cols-header
 
 ---
 layout: cover
-background: ./imgs/cover.webp
+background: /cover.webp
 ---
 
 # Than you
