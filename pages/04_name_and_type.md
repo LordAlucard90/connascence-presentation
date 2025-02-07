@@ -2,41 +2,51 @@
 layout: two-cols-header
 ---
 
-# Connascence
+<h1>
+  Connascence
+  <span v-click="9">
+    of
+    <span v-mark.highlight.green=9>Name</span> 
+  </span>
+  <span v-click="15">
+    and
+    <span v-mark.highlight.blue=15>Type</span> 
+  </span>
+</h1>
 
 ::left::
 
 <br>
 <table>
   <thead>
-    <td><strong v-click="19" v-mark.highlight.blue="19">Type</strong></td>
-    <td><strong v-click="12" v-mark.highlight.green="12">Name</strong></td>
-    <td><strong v-click="19" v-mark.highlight.blue="19">Type</strong></td>
-    <td><strong v-click="12" v-mark.highlight.green="12">Name</strong></td>
+    <td><strong v-click="15" v-mark.highlight.blue="15">Type</strong></td>
+    <td><strong v-click="9" v-mark.highlight.green="9">Name</strong></td>
+    <td><strong v-click="15" v-mark.highlight.blue="15">Type</strong></td>
+    <td><strong v-click="9" v-mark.highlight.green="9">Name</strong></td>
   </thead>
   <tr>
-    <td> <code v-click="15" v-mark.circle.blue="18">int</code> </td>
-    <td> <code v-click="4" v-mark.box.green="10">_hour</code> </td>
-    <td> <code v-click="17" v-mark.circle.blue="18">int</code> </td>
-    <td> <code v-click="8" v-mark.box.green="11">hour</code> </td>
+    <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
+    <td> <code v-click="4" v-mark.box.green="8">_hour</code> </td>
+    <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
+    <td> <code v-click="7" v-mark.box.green="8">hour</code> </td>
   </tr>
   <tr>
-    <td> <code v-click="15" v-mark.circle.blue="18">int</code> </td>
-    <td> <code v-click="4" v-mark.box.green="10">_minute</code> </td>
-    <td> <code v-click="17" v-mark.circle.blue="18">int</code> </td>
-    <td> <code v-click="8" v-mark.box.green="11">minute</code> </td>
+    <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
+    <td> <code v-click="4" v-mark.box.green="8">_minute</code> </td>
+    <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
+    <td> <code v-click="7" v-mark.box.green="8">minute</code> </td>
   </tr>
   <tr>
-    <td> <code v-click="15" v-mark.circle.blue="18">int</code> </td>
-    <td> <code v-click="4" v-mark.box.green="10">_second</code> </td>
-    <td> <code v-click="17" v-mark.circle.blue="18">int</code> </td>
-    <td> <code v-click="8" v-mark.box.green="11">second</code> </td>
+    <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
+    <td> <code v-click="4" v-mark.box.green="8">_second</code> </td>
+    <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
+    <td> <code v-click="7" v-mark.box.green="8">second</code> </td>
   </tr>
 </table>
 
 ::right::
 
-```java {all|2-4|2-4,7-9|2-4,7-9,13|2-4,7-9,13|all|6|6-9|6-9|all|all|all|all|all|2-4|2-4|6|6|all}
+```java {all|2-4|2-4,7-9|2-4,7-9,13|all|6|6-9|all|all|all|2-4|2-4|6|all}
 public class Time {
   private int _hour;
   private int _minute;
@@ -74,23 +84,39 @@ layout: two-cols-header
 
 ::left::
 
-These two types of connascence are the basics that made a program work, 
-and should the only types that are present in the code.
+<p v-click>
+  These two types of connascence represent the
+  <span v-mark.mark.green=1>foundations</span> 
+  that made a 
+  <span v-mark.mark.green=1>program work</span>, 
+  and should the 
+  <span v-mark.mark.yellow=1>only types present</span>, 
+  in the code.
+</p>
 
 <br>
 <br>
 
-- <strong>Connascence of Name</strong>:\
-  <span v-mark.green=0>Repeat the name</span> of the variables
+<ul v-click>
+  <li>
+    <strong>Connascence of Name</strong>:
+    <br>
+    <span v-mark.green=2>Repeat the name</span> of the variables
+  </li>
+</ul>
 
 <br>
 <br>
 
-- <strong>Connascence of Type</strong>:\
-  <span v-mark.green=0>Repeat the type</span> of the variables
+<ul v-click>
+  <li>
+    <strong>Connascence of Type</strong>:
+    <br>
+    <span v-mark.green=3>Repeat the type</span> of the variables
+  </li>
+</ul>
 
 ::right::
 
 <Scale :l1=true :l2=true />
 
-<!-- FIXME: add proper timing -->

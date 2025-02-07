@@ -2,13 +2,13 @@
 layout: two-cols-header
 ---
 
-# Connascence
-
-
-<h3 v-click="3">
-  Connascence of 
-  <span  v-click="4" v-mark.highlight.yellow=4>Meaning</span> 
-</h3>
+<h1>
+  Connascence
+  <span v-click="3">
+    of
+    <span v-mark.highlight.yellow=3>Meaning</span> 
+  </span>
+</h1>
 
 ::left::
 
@@ -27,7 +27,7 @@ I travel by bus <br/>
 ::right::
 
 ````md magic-move {lines: true}
-```js {all|3,6|all|all}
+```js {all|3,6|all}
 private setTransport(String transport){
   switch(transport) {
     case "1":
@@ -41,24 +41,23 @@ private setTransport(String transport){
 }
 ```
 
-```js {all}
-const BIKE = "1";
-const CAR = "2";
-// others
+```js {all|1,4,7}
+// how can be solved?
 private setTransport(String transport){
   switch(transport) {
     case "1":
       addBike(); 
       break:
     case "2":
-      addCar(); 
+      addBike(); 
       break:
     // etc...
   }
 }
 ```
 
-```js {all}
+```js {1-3,7,10}
+// Introduce meaningful constants/enums
 const BIKE = "1";
 const CAR = "1";
 // others
@@ -92,43 +91,39 @@ layout: two-cols-header
 
 <br>
 <br>
-<p>
-  <span v-click="1">
-    It occurs when 2+ components must 
-    <span v-mark.box.yellow=2>agree</span> 
-  </span>
-  <span v-click="3">
+<p v-click>
+    It occurs when 2+ components must
+    <span v-mark.mark.yellow=1>agree</span> 
     <br>
     on the
-    <span v-mark.box.yellow=4>meaning</span>
+    <span v-mark.mark.yellow=1>meaning</span>
     of a specific
-    <span v-mark.box.yellow=4>value</span>
+    <span v-mark.mark.yellow=1>value</span>
     (convention).
-  </span>
-  <br>
-  <br>
-  <span v-click="5">
-    Even if it is
-    <span v-mark.yellow=6>not strong</span>,
-    <br>
-    it is common and 
-    <span v-mark.yellow=6>hard to find on debugging</span>.
-  </span>
 </p>
 <br>
-<p v-click="7">
-  Can be solved by making convention
-  <span v-mark.mark.green=8>clear</span>
+<p v-click>
+    Even if it is
+    <span v-mark.yellow=2>not strong</span>,
+    it is 
+    <span v-mark.yellow=2>common</span>
+    and
+    <br>
+    <span v-mark.yellow=2>hard to find on debugging</span>.
+</p>
+<br>
+<p v-click>
+  Can be solved
+  by making 
+  <span v-mark.mark.green=3>convention clear</span>,
   <br>
-  by using
-  <span v-mark.mark.green=8>constants</span>
+  with the help of
+  <span v-mark.mark.green=3>constants</span>
   or
-  <span v-mark.mark.green=8>enums</span>.
+  <span v-mark.mark.green=3>enums</span>.
 </p>
 
 ::right::
 
 <Scale :l1=true :l2=true :l3=true :l5=true :l8=true />
-
-<!-- FIXME: add proper timing -->
 

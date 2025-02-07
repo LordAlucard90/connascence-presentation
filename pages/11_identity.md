@@ -4,9 +4,9 @@ layout: two-cols-header
 
 <h1>
   Connascence
-  <span v-click="2">
+  <span v-click="3">
     of
-    <span v-mark.highlight.orange=2>Identity</span> 
+    <span v-mark.highlight.orange=3>Identity</span> 
   </span>
 </h1>
 
@@ -32,7 +32,8 @@ public class GlobalCounter {
 
 ::right::
 
-```java {all|4-6,10|all}
+````md magic-move {lines: true}
+```java {all|4-6,10}
 public class Controller {
   private GlobalCounter counter;
 
@@ -46,6 +47,22 @@ public class Controller {
   }
 }
 ```
+```java {4-7,11}
+public class Controller {
+  private GlobalCounter counter;
+
+  // the success depends on the actual instance
+  public Controller(GlobalCounter counter) {
+    this.counter = counter;
+  }
+
+  public void someAction() {
+    // perform the action
+    counter.increment();
+  }
+}
+```
+````
 
 ---
 layout: two-cols-header
@@ -59,18 +76,17 @@ layout: two-cols-header
 
 <br>
 <br>
-<p>
-  <span v-click="1">
+<p v-click>
     It occurs when 2+ components must
-    <span v-mark.box.red=1>refer</span> 
+    <span v-mark.mark.red=1>refer</span> 
     to a 
-    <span v-mark.box.red=1>particular instance</span> 
+    <span v-mark.mark.red=1>particular instance</span> 
     of another entity to work 
-    <span v-mark.box.red=1>correctly</span> .
-  </span>
+    <br>
+    <span v-mark.mark.red=1>correctly</span> .
+  </p>
   <br>
-  <br>
-  <span v-click="2">
+  <p v-click>
     It is the
     <span v-mark.red=2>strongest</span>,
     form of connascence in 
@@ -78,16 +94,18 @@ layout: two-cols-header
     <br>
     it only produces errors under
     <span v-mark.red=2>certain conditions</span>
+    <br>
     that depend on the 
     <span v-mark.red=2>creation context</span>.
-  </span>
 </p>
 <br>
-<p v-click="3">
-  To solve it, can be necessary to use an 
+<p v-click>
+  It can be necessary to use an 
   <span v-mark.mark.green=3>external context</span>
+  <br>
   or use some mechanism to 
   <span v-mark.mark.green=3>ensure the correctness</span>
+  <br>
   of the current one.
 </p>
 
@@ -96,9 +114,4 @@ layout: two-cols-header
 <Scale 
   :l1=true :l2=true :l3=true :l4=true :l5=true
   :l6=true :l7=true :l8=true :l9=true />
-
-<!-- FIXME: add proper timing -->
-
-
-
 

@@ -13,7 +13,7 @@ layout: two-cols-header
 
 ::left::
 
-```java {all|7|10-14|16-18|11}
+```java {all|1,7|1,7,10-14|1,7,10-14,16-18|1,6,11}
 // production code
 @AllArgsConstructor
 public class TalkToExternal {
@@ -40,7 +40,7 @@ public class TalkToExternal {
 
 ::right::
 
-```java {all|15}
+```java {all|1,6-7,15}
 // test code
 @ExtendWith(MockitoExtension.class)
 public class TalkToExternalTest {
@@ -201,51 +201,47 @@ layout: two-cols-header
 
 
 <br>
-<br>
-<p>
-  <span v-click="1">
-    It occurs when the
-    <span v-mark.box.orange=1>success</span> 
-    of 2+ call
-    <span v-mark.box.orange=1>depends</span> 
-    <br>
-    on the
-    <span v-mark.box.orange=1>timing</span>
-    they occur.
-  </span>
+<p v-click>
+  It occurs when the
+  <span v-mark.mark.orange=1>success</span> 
+  of 2+ call
+  <span v-mark.mark.orange=1>depends</span> 
   <br>
-  <span v-click="2">
-    One of the classic example is 
-    <span v-mark.orange=2>race condition</span>,
-    <br>
-    call to 
-    <span v-mark.orange=2>wait</span>,
-    <span v-mark.orange=2>sleep</span>
-    or arbitrary
-    <span v-mark.orange=2>timeouts</span>.
-  </span>
-  <br>
-  <br>
-  <span v-click="3">
-    It is 
-    <span v-mark.orange=3>not possible to control time</span>,
-    this can create
-    <span v-mark.orange=3>intermittent problems</span>
-    that are hard to 
-    <span v-mark.orange=3>identify</span>
-    and 
-    <span v-mark.orange=3>resolve</span>.
-  </span>
+  on the
+  <span v-mark.mark.orange=1>timing</span>
+  they occur.
 </p>
-<p v-click="4">
+<p v-click>
+  The classic example are:
+  <span v-mark.orange=2>race condition</span>,
+  call to 
+  <br>
+  <span v-mark.orange=2>wait</span>,
+  <span v-mark.orange=2>sleep</span>
+  or arbitrary
+  <span v-mark.orange=2>timeouts</span>.
+</p>
+<p v-click>
+  It is 
+  <span v-mark.orange=3>not possible to control time</span>,
+  this can create
+  <span v-mark.orange=3>intermittent problems</span>
+  that are hard to 
+  <span v-mark.orange=3>identify</span>
+  <br>
+  and 
+  <span v-mark.orange=3>resolve</span>.
+</p>
+<br>
+<p v-click>
   It
   <span v-mark.mark.yellow=4>cannot be easily solved</span>
   in the production code,
   <br>
   but it is possible to 
-  <span v-mark.mark.green=4>remove it from the tests</span>
+  <span v-mark.mark.green=4>remove it from the tests</span>.
   <br>
-  that should always run in 
+  They should always run in 
   <span v-mark.mark.green=4>isolation</span>
   and
   <br>
@@ -255,8 +251,4 @@ layout: two-cols-header
 ::right::
 
 <Scale :l1=true :l2=true :l3=true :l4=true :l5=true :l6=true :l7=true :l8=true />
-
-<!-- FIXME: add proper timing -->
-
-
 

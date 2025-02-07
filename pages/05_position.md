@@ -2,25 +2,15 @@
 layout: two-cols-header
 ---
 
-# Connascence
+<h1>
+  Connascence
+  <span v-click="3">
+    of
+    <span v-mark.highlight.yellow=3>Position</span> 
+  </span>
+</h1>
 
 ::left::
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<h3 v-click="4">
-  Connascence of 
-  <span  v-click="4" v-mark.highlight.yellow=5>Position</span> 
-</h3>
-
-::right::
-
-<br>
 
 ````md magic-move {lines: true}
 ```java {all|6-8,18}
@@ -65,27 +55,6 @@ public class NotificationService {
 notificationService.sendEmail(sender, message, recipient);
 ```
 
-```java {6-8,18}
-@Service
-@RequiredArgsConstructor
-public class NotificationService {
-  private final SmtpService smtpService;
-  
-  public void sendEmail(String recipient,
-                        String sender,
-                        String message) {
-    var email = new Email();
-    email.setTo(recipient);
-    email.setFrom(sender);
-    email.setBody(message);
-    smtpService.sendEmail(email);
-  }
-}
-
-// client
-notificationService.sendEmail(message, recipient, sender);
-```
-
 ```java {all}
 @Service
 @RequiredArgsConstructor
@@ -108,9 +77,7 @@ notificationService.sendEmail(recipient, sender, message);
 ```
 ````
 
-<br>
-<br>
-<br>
+::right::
 
 
 ---
@@ -148,8 +115,6 @@ public record Message(
 }
 ```
 ````
-
-
 
 ::right::
 
@@ -227,7 +192,8 @@ public record Notification(
 
 ```java {all}
 // encapsulate primitives inside a single class
-// to do not just have the same problem here use a builder
+// to do not just move the same problem here
+// -> use a builder
 @Builder
 public record Notification(
   String recipient,
@@ -245,9 +211,6 @@ final var notification = Notification.builder()
 ```
 ````
 
-<br>
-<br>
-<br>
 
 
 ::right::
@@ -305,34 +268,36 @@ layout: two-cols-header
 ::left::
 
 
-<p v-click="1">
-  It occurs when multiple component must be
+<p v-click>
+  It occurs when multiple 
+  <span v-mark.mark.yellow=1>component</span> 
+  must be
   <br>
-  <span v-mark.box.yellow=2>adjacent</span> 
-  or appear in a particular 
-  <span v-mark.box.yellow=2>order</span>.
+  <span v-mark.mark.yellow=1>adjacent</span> 
+  or appear in a 
+  <span v-mark.mark.yellow=1>particular order</span>.
 </p>
-<p v-click="3">
+<p v-click>
   Can be usually found in positional structures as 
-  <br> <span v-mark.circle.yellow=4>arrays</span>,
-  <span v-mark.circle.yellow=4>tuples</span>
+  <br> <span v-mark.mark.yellow=2>arrays</span>,
+  <span v-mark.mark.yellow=2>tuples</span>
   or
-  <span v-mark.circle.yellow=4>lists</span>.
+  <span v-mark.mark.yellow=2>lists</span>.
 </p>
 <br>
-<p v-click="5">
+<p v-click>
   Can be solved by defining 
-  <span v-mark.mark.green=6>custom types</span>,
+  <span v-mark.mark.green=3>custom types</span>,
   <br>
   this allows to work with
-  <span v-mark.mark.green=4>expressive constructs</span>.
+  <span v-mark.mark.green=3>expressive constructs</span>.
 </p>
-<p v-click="7">
+<p v-click>
   Another possibility
-  <span v-mark.mark.green=8>encapsulation</span>,
+  <span v-mark.mark.green=4>encapsulation</span>,
   <br>
   this allows to 
-  <span v-mark.mark.green=8>reduce the method's coupling</span>
+  <span v-mark.mark.green=4>reduce the method's coupling</span>
   <br>
   (less required parameters).
 </p>
@@ -341,4 +306,3 @@ layout: two-cols-header
 
 <Scale :l1=true :l2=true :l5=true />
 
-<!-- FIXME: add proper timing -->

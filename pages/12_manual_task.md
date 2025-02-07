@@ -13,42 +13,67 @@ layout: two-cols-header
 
 ::left::
 
+<p v-click>
+  Let's immagine a service that 
+  <span v-mark.mark.yellow=1>consumes messages</span>.
+</p>
+<p v-click>
+  Each message must be 
+  <span v-mark.mark.orange=2>defined</span>
+  in a 
+  <span v-mark.mark.orange=2>configuration</span>
+  <br>
+  and in the 
+  <span v-mark.mark.orange=2>code</span>
+  with an handler.
+</p>
+<p v-click>
+  The connascence represented by the 
+  <span v-mark.mark.green=3>configuration file</span>
+  <br>
+  is
+  <span v-mark.mark.green=3>removed </span>
+  by a service's 
+  <span v-mark.mark.green=3>self-configuration</span>
+  at startup.
+</p>
+<p v-click>
+  Everything works fine
+  <span v-mark.mark.green=4>locally</span>..
+  <br>
+  but 
+  <span v-mark.mark.orange=4>integration</span>
+  on it is not working anymore..
+</p>
 <p>
-  Let's immagine a service that consumes messages.
-</p>
-<p v-click="1">
-  Each message must be defined in a configuration
-  <br>
-  and in the code with an handler.
-</p>
-<p v-click="2">
-  The connascence represented by the configuration file
-  is removed by a service's self-configuration at startup.
-</p>
-<p v-click="3">
-  Everything works fine locally..
-  <br>
-  <span v-click="4">
-    but on integration it is not working anymore..
-  </span>
-</p>
-<p v-click="6">
+  <span v-click>
   After a lot of researches...
-  <span v-click="6">
-    in the deployment script..
+  </span>
+  <span v-click>
+    in the
+    <span v-mark.mark.orange=6>
+      deployment script
+    </span>...
   </span>
   <br>
-  <span v-click="7">
-    there is a step to create the subscription 😖
+  <span v-click>
+    there is a 
+    <span v-mark.mark.red=7>
+    step to create the subscription
+    </span>
+     😖
   </span>
 </p>
 <p v-click="9">
   The 
   <span v-mark.mirk.red=9>locality</span> 
-  of this connascence is far away.
+  of this connascence is
+  <span v-mark.mirk.red=9> far away</span>.
 </p>
 <p v-click="10">
-  It can be solve increasing the level of
+  It can be solve 
+  <span v-mark.mirk.green=10>increasing </span>.
+  the level of
   <span v-mark.mirk.green=10>automation</span>.
 </p>
 

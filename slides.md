@@ -6,9 +6,9 @@ titleTemplate: '%s'
 info: false
 author: LordAlucard90
 class: text-left
-# presenter: true
+presenter: false
 # browserExporter: false
-# download: false
+download: false
 # record: false
 # contextMenu: false
 

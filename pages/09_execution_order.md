@@ -46,6 +46,7 @@ class BillingService {
   }
 }
 ```
+
 ```java {all}
 @RequiredArgsConstructor
 class BillingService {
@@ -62,17 +63,36 @@ class BillingService {
   }
 }
 ```
+
 ```java {all}
 @RequiredArgsConstructor
 class BillingService {
   public void createAndSendBill(Vendor vendor,
                                 Order order,
                                 Cosutmer costumer) {
-    var bill = new BillBuilderImpl()
+    // how can be solved?
+    var bill = new BillBuilder()
           .vendor(vendor)
           .order(order)
           .pdf()
           .costumer(costumer)
+          .build();
+    sendBill(bill);
+  }
+}
+```
+```java {6-7}
+@RequiredArgsConstructor
+class BillingService {
+  public void createAndSendBill(Vendor vendor,
+                                Order order,
+                                Cosutmer costumer) {
+    // improve the builder implementation
+    var bill = new BillBuilderImpl()
+          .vendor(vendor)
+          .order(order)
+          .costumer(costumer)
+          .pdf()
           .build();
     sendBill(bill);
   }
@@ -160,31 +180,28 @@ layout: two-cols-header
 
 <br>
 <br>
-<p>
-  <span v-click="1">
+<p v-click>
     It occurs when the
-    <span v-mark.box.yellow=1>caller</span> 
+    <span v-mark.mark.yellow=1>caller</span> 
     of a component,
     <br>
     must have some 
-    <span v-mark.box.yellow=1>knowledge</span>
+    <span v-mark.mark.yellow=1>knowledge</span>
     <br>
     on the 
-    <span v-mark.box.yellow=1>order</span>
+    <span v-mark.mark.yellow=1>order</span>
     of the methods to be called.
-  </span>
-  <br>
-  <br>
-  <span v-click="2">
+</p>
+<br>
+<p v-click>
     The code becomes
     <span v-mark.yellow=2>difficult to maintain</span>
     because the logic can be
     <span v-mark.yellow=2>hard to understand</span>
      just by reading it.
-  </span>
 </p>
 <br>
-<p v-click="3">
+<p v-click>
   Can be solved with the help of a
   <span v-mark.mark.green=3>builder</span>
   <br>
@@ -200,7 +217,4 @@ layout: two-cols-header
 ::right::
 
 <Scale :l1=true :l2=true :l3=true :l4=true :l5=true :l6=true :l8=true />
-
-<!-- FIXME: add proper timing -->
-
 
