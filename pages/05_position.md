@@ -200,6 +200,7 @@ public record Notification(
   String sender,
   String message
 ) {
+  // ...
 }
 
 // client

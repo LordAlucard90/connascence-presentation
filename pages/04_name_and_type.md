@@ -89,8 +89,9 @@ layout: two-cols-header
   <span v-mark.mark.green=1>foundations</span> 
   that made a 
   <span v-mark.mark.green=1>program work</span>, 
-  and should the 
-  <span v-mark.mark.yellow=1>only types present</span>, 
+  <br>
+  they should be the 
+  <span v-mark.mark.yellow=1>only types present</span>
   in the code.
 </p>
 

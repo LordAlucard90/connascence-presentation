@@ -41,25 +41,25 @@ layout: two-cols-header
   Everything works fine
   <span v-mark.mark.green=4>locally</span>..
   <br>
-  but 
-  <span v-mark.mark.orange=4>integration</span>
-  on it is not working anymore..
+  but on
+  <span v-mark.mark.orange=4>integration</span>,
+  it is not working anymore..
 </p>
 <p>
   <span v-click>
-  After a lot of researches...
+  After a lot of researches ..
   </span>
   <span v-click>
     in the
     <span v-mark.mark.orange=6>
       deployment script
-    </span>...
+    </span>..
   </span>
   <br>
   <span v-click>
-    there is a 
+    there is an
     <span v-mark.mark.red=7>
-    step to create the subscription
+    extra step to create the subscription
     </span>
      😖
   </span>
@@ -68,11 +68,12 @@ layout: two-cols-header
   The 
   <span v-mark.mirk.red=9>locality</span> 
   of this connascence is
-  <span v-mark.mirk.red=9> far away</span>.
+  <span v-mark.mirk.red=9> far away</span>
+  from code.
 </p>
 <p v-click="10">
   It can be solve 
-  <span v-mark.mirk.green=10>increasing </span>.
+  <span v-mark.mirk.green=10>increasing </span>
   the level of
   <span v-mark.mirk.green=10>automation</span>.
 </p>

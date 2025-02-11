@@ -13,7 +13,7 @@ all its parts collaborate together to resolve it.
   <span v-mark.mark.blue=2>Each member</span>
   of a cohesive class 
   <span v-mark.mark.blue=2>relates only</span>
-  with elements that has a 
+  with elements that have a 
   <span v-mark.mark.blue=2>connection</span>
   with the
   <span v-mark.mark.blue=2>semantic of the class</span>
@@ -38,6 +38,6 @@ all its parts collaborate together to resolve it.
 <strong v-click>
 "If I change element A.1,
 <br>
-do I have to change all other sub-elements A.2-N?"
+do I have to change all other sub-elements A.2-A.n?"
 </strong>
 

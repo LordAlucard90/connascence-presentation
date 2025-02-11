@@ -54,10 +54,10 @@ class BillingService {
                                 Order order,
                                 Cosutmer costumer) {
     var bill = new BillBuilder()
-          .vendor(vendor)
-          .order(order)
           .pdf()
           .costumer(costumer)
+          .order(order)
+          .vendor(vendor)
           .build();
     sendBill(bill);
   }
@@ -72,10 +72,10 @@ class BillingService {
                                 Cosutmer costumer) {
     // how can be solved?
     var bill = new BillBuilder()
-          .vendor(vendor)
-          .order(order)
           .pdf()
           .costumer(costumer)
+          .order(order)
+          .vendor(vendor)
           .build();
     sendBill(bill);
   }

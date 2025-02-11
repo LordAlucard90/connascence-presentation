@@ -6,14 +6,12 @@ titleTemplate: '%s'
 info: false
 author: LordAlucard90
 class: text-left
-presenter: false
-# browserExporter: false
-download: false
-# record: false
-# contextMenu: false
-
 lineNumbers: true
 colorSchema: 'light'
+presenter: false
+download: true
+exportFilename: connascence_a-way-for-better-code
+
 addons:
 - slidev-component-pager
 

@@ -20,7 +20,7 @@ image: /people_talking.webp
   <span v-mark.mark.yellow=2>bring problems</span>.
   <br>
   The 
-  <span v-mark.mark.green=2>aim</span>.
+  <span v-mark.mark.green=2>aim</span>
   is to have 
   <span v-mark.mark.green=2>low coupling</span>.
   
