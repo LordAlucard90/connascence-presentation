@@ -1,8 +1,13 @@
-# connascence-presentation
+# Connascence Presentation
 
-<!-- Slides available at: ... -->
+- [live presentation](https://lordalucard90.github.io/connascence-presentation/)
+- [pdf version](https://lordalucard90.github.io/connascence-presentation/connascence_a-way-for-better-code.pdf)
 
-<!-- book reference -->
+## References
+
+This presentation is based on the connascence chapter that can be found
+in this book:
+- [Agile Technical Practices Distilled](https://www.oreilly.com/library/view/agile-technical-practices/9781838980849/)
 
 ## Run the slides locally
 
