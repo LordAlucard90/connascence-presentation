@@ -19,29 +19,33 @@ layout: two-cols-header
 <br>
 <table>
   <thead>
-    <td><strong v-click="15" v-mark.highlight.blue="15">Type</strong></td>
-    <td><strong v-click="9" v-mark.highlight.green="9">Name</strong></td>
-    <td><strong v-click="15" v-mark.highlight.blue="15">Type</strong></td>
-    <td><strong v-click="9" v-mark.highlight.green="9">Name</strong></td>
+    <tr>
+      <th><strong v-click="15" v-mark.highlight.blue="15">Type</strong></th>
+      <th><strong v-click="9" v-mark.highlight.green="9">Name</strong></th>
+      <th><strong v-click="15" v-mark.highlight.blue="15">Type</strong></th>
+      <th><strong v-click="9" v-mark.highlight.green="9">Name</strong></th>
+    </tr>
   </thead>
-  <tr>
-    <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
-    <td> <code v-click="4" v-mark.box.green="8">_hour</code> </td>
-    <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
-    <td> <code v-click="7" v-mark.box.green="8">hour</code> </td>
-  </tr>
-  <tr>
-    <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
-    <td> <code v-click="4" v-mark.box.green="8">_minute</code> </td>
-    <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
-    <td> <code v-click="7" v-mark.box.green="8">minute</code> </td>
-  </tr>
-  <tr>
-    <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
-    <td> <code v-click="4" v-mark.box.green="8">_second</code> </td>
-    <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
-    <td> <code v-click="7" v-mark.box.green="8">second</code> </td>
-  </tr>
+  <tbody>
+    <tr>
+      <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
+      <td> <code v-click="4" v-mark.box.green="8">_hour</code> </td>
+      <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
+      <td> <code v-click="7" v-mark.box.green="8">hour</code> </td>
+    </tr>
+    <tr>
+      <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
+      <td> <code v-click="4" v-mark.box.green="8">_minute</code> </td>
+      <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
+      <td> <code v-click="7" v-mark.box.green="8">minute</code> </td>
+    </tr>
+    <tr>
+      <td> <code v-click="11" v-mark.circle.blue="14">int</code> </td>
+      <td> <code v-click="4" v-mark.box.green="8">_second</code> </td>
+      <td> <code v-click="13" v-mark.circle.blue="14">int</code> </td>
+      <td> <code v-click="7" v-mark.box.green="8">second</code> </td>
+    </tr>
+  </tbody>
 </table>
 
 ::right::
