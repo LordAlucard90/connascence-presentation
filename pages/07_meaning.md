@@ -59,7 +59,7 @@ private setTransport(String transport){
 ```js {1-3,7,10}
 // Introduce meaningful constants/enums
 const BIKE = "1";
-const CAR = "1";
+const CAR = "2";
 // others
 private setTransport(String transport){
   switch(transport) {
