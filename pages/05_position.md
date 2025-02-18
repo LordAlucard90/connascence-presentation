@@ -208,7 +208,7 @@ final var notification = Notification.builder()
     .recipient(recipient)
     .sender(sender)
     .message(message)
-    .build9);
+    .build();
 ```
 ````
 
