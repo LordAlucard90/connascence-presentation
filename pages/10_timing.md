@@ -25,7 +25,7 @@ public class TalkToExternal {
     EndData endData;
     for (int i = 0; i < 5; i++) {
       Thread.sleep(1000);
-      endData = client.fetctData(id);
+      endData = client.fetchData(id);
       if (endData != null) { break; }
     }
 
@@ -50,7 +50,7 @@ public class TalkToExternalTest {
   void givenNoData_whenFetch_thenThrowsException(){
     // given
     given(clientMock.initData(any())).willReturn(1);
-    given(clientMock.fetctData(any())).willReturn(null);
+    given(clientMock.fetchData(any())).willReturn(null);
 
     // when - then
     assertThrows(
@@ -83,7 +83,7 @@ public class TalkToExternal {
     EndData endData;
     for (int i = 0; i < 5; i++) {
       Thread.sleep(1000);
-      endData = client.fetctData(id);
+      endData = client.fetchData(id);
       if (endData != null) { break; }
     }
 
@@ -108,7 +108,7 @@ public class TalkToExternal {
     EndData endData;
     for (int i = 0; i < 5; i++) {
       Thread.sleep(1000);
-      endData = client.fetctData(id);
+      endData = client.fetchData(id);
       if (endData != null) { break; }
     }
 
@@ -131,7 +131,7 @@ public class TalkToExternal {
     var id = client.initializeData(initData);
 
     EndData endData = awaiter.await(
-      5, 1000, () -> client.fetctData(id)
+      5, 1000, () -> client.fetchData(id)
     )
 
     if (endData == null) {
@@ -157,7 +157,7 @@ public class TalkToExternalTest {
   void givenNoData_whenFetch_thenThrowsException(){
     // given
     given(clientMock.initData(any())).willReturn(1);
-    given(clientMock.fetctData(any())).willReturn(null);
+    given(clientMock.fetchData(any())).willReturn(null);
 
     // when - then
     assertThrows(
