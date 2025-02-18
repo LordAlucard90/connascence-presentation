@@ -9,7 +9,7 @@ class: text-left
 lineNumbers: true
 colorSchema: 'light'
 presenter: false
-download: false
+download: true
 exportFilename: connascence_a-way-for-better-code
 
 addons:
